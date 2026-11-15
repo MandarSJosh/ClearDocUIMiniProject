@@ -8,7 +8,7 @@
 
 ---
 
-## Key Features
+## 🚀 Key Features
 * **100% Local & Private:** Operates entirely on-device via Ollama (`gemma4:e2b`), ensuring sensitive health data never leaves your machine or touches external cloud APIs.
 * **Human-in-the-Loop Review Gate:** Because small local models are prone to hallucinations or clinical oversimplifications, ClearDoc forces a side-by-side comparison. Users or caregivers must manually review the draft and tick a mandatory verification checklist before unlocking export/download options.
 * **Built-In Test Suite:** Includes an integrated test-case selector allowing markers and users to instantly load standardized test inputs (Rheumatoid Arthritis, OpenAI Terms of Service, and Warfarin Clinical Label).
@@ -16,14 +16,14 @@
 
 ---
 
-## System Architecture & Tech Stack
+## 🛠️ System Architecture & Tech Stack
 * **Frontend UI:** Streamlit (`app.py`) providing a clean, high-contrast, responsive two-column layout.
 * **Local Inference Engine:** Ollama running Gemma 4 (`gemma4:e2b`) locally via Apple Silicon hardware acceleration.
-* **State Management:** Streamlit Session State (`is_approved`, `do_reset`) to manage review gates and reset flows cleanly.
+* **State Management:** Streamlit Session State (`is_approved`, `do_reset`, `check_nums`, `check_risks`) to manage review gates and reset flows cleanly.
 
 ---
 
-## Clean-Run Installation & Setup Instructions
+## 📦 Clean-Run Installation & Setup Instructions
 
 Follow these exact steps to run ClearDoc locally from scratch:
 
